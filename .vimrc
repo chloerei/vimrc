@@ -17,12 +17,13 @@ Bundle 'Align'
 Bundle 'tpope/vim-rails'
 Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/nerdtree'
+Bundle 'kchmck/vim-coffee-script'
 
 Bundle 'wincent/Command-T'
 " cd ~/.vim/bundle/Command-T/ruby/ ; ruby extconf.rb ; make 
 
 " 字体
-set guifont=monaco
+set guifont=monaco\ 9
 
 set nobackup
 set nowritebackup
@@ -56,6 +57,8 @@ autocmd FileType python   set noexpandtab
 autocmd FileType eruby  set tabstop=4 shiftwidth=4
 autocmd FileType ruby,rdoc set tabstop=2 shiftwidth=2
 autocmd FileType html set tabstop=4 shiftwidth=4
+autocmd FileType javascript set tabstop=2 shiftwidth=2
+autocmd FileType coffee set tabstop=2 shiftwidth=2
 au! BufRead,BufNewFile *.json setfiletype json 
 
 " 快捷键
