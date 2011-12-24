@@ -18,6 +18,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'hallison/vim-markdown'
 
 Bundle 'wincent/Command-T'
 " cd ~/.vim/bundle/Command-T/ruby/ ; ruby extconf.rb ; make 
@@ -42,6 +43,7 @@ set incsearch
 
 "根据文件格式载入插件和缩进
 filetype plugin indent on 
+set autoindent
 
 "打开鼠标功能
 set mouse=a 
@@ -54,9 +56,9 @@ set smarttab
 
 autocmd FileType make     set noexpandtab
 autocmd FileType python   set noexpandtab
-autocmd FileType eruby  set tabstop=4 shiftwidth=4
+autocmd FileType eruby  set tabstop=2 shiftwidth=2
 autocmd FileType ruby,rdoc set tabstop=2 shiftwidth=2
-autocmd FileType html set tabstop=4 shiftwidth=4
+autocmd FileType html set tabstop=2 shiftwidth=2
 autocmd FileType javascript set tabstop=2 shiftwidth=2
 autocmd FileType coffee set tabstop=2 shiftwidth=2
 au! BufRead,BufNewFile *.json setfiletype json 
