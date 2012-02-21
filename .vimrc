@@ -19,12 +19,13 @@ Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'hallison/vim-markdown'
+Bundle 'groenewege/vim-less'
 
 Bundle 'wincent/Command-T'
 " cd ~/.vim/bundle/Command-T/ruby/ ; ruby extconf.rb ; make 
 
 " 字体
-set guifont=monaco\ 9
+set guifont=monaco\ 10
 
 set nobackup
 set nowritebackup
