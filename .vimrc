@@ -56,6 +56,9 @@ set shiftwidth=4
 set expandtab
 set smarttab
 
+" Display extra whitespace
+set list listchars=tab:»·,trail:·
+
 autocmd FileType make     set noexpandtab
 autocmd FileType python   set noexpandtab
 autocmd FileType eruby  set tabstop=2 shiftwidth=2
