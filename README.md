@@ -8,8 +8,7 @@ What vim scripts I use are list in .vimrc with `Bundle` command.
 
 * vim
 * git
-* ruby && rake
-* rvm
+* rake
 
 ## Install
 

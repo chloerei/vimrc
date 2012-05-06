@@ -21,9 +21,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'hallison/vim-markdown'
 Bundle 'groenewege/vim-less'
 Bundle 'bbommarito/vim-slim'
-
-Bundle 'wincent/Command-T'
-" cd ~/.vim/bundle/Command-T/ruby/ ; ruby extconf.rb ; make
+Bundle 'kien/ctrlp.vim'
 
 " 字体
 set guifont=monaco\ 10
@@ -87,9 +85,6 @@ nmap <Left> <c-w>h
 let g:rubycomplete_buffer_loading = 1
 let g:rubycomplete_classes_in_global = 1
 let g:rubycomplete_rails = 1
-
-nmap <S-f> :CommandT<cr>
-let g:fuf_previewHeight = 0
 
 nmap <F2> :w<cr>
 nmap <F3> :wa<cr>
