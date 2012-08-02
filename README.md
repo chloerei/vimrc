@@ -16,6 +16,6 @@ Install will overwrite your .vimrc, .gvimrc file and .vim folder, be sure **back
 
     git clone git@github.com:chloerei/vimrc.git
     cd vimrc
-    ./deploy
+    ./deploy.sh
 
 Done.
