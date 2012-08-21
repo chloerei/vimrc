@@ -14,7 +14,7 @@ What vim scripts I use are list in .vimrc with `Bundle` command.
 
 Install will overwrite your .vimrc, .gvimrc file and .vim folder, be sure **backup your vim config** first.
 
-    git clone git@github.com:chloerei/vimrc.git
+    git clone git://github.com/chloerei/vimrc.git
     cd vimrc
     ./deploy.sh
 
