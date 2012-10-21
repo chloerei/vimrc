@@ -22,6 +22,7 @@ Bundle 'hallison/vim-markdown'
 Bundle 'groenewege/vim-less'
 Bundle 'bbommarito/vim-slim'
 Bundle 'kien/ctrlp.vim'
+Bundle 'chloerei/syntastic'
 
 " 字体
 set guifont=monaco\ 10
@@ -92,3 +93,14 @@ nmap <F4> :q<cr>
 nmap <F6> :cp<cr>
 nmap <F7> :cn<cr>
 nmap <F11> gg=G<C-o>
+
+" syntastic
+let g:syntastic_check_on_open = 1
+let g:syntastic_error_symbol = '✗'
+let g:syntastic_warning_symbol = '⚠'
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_loc_list_height = 5
+let g:syntastic_enable_highlighting = 0
+
+nmap <A-up> :lprev<cr>
+nmap <A-down> :lnext<cr>
