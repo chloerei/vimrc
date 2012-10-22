@@ -104,3 +104,4 @@ let g:syntastic_enable_highlighting = 0
 
 nmap <A-up> :lprev<cr>
 nmap <A-down> :lnext<cr>
+nmap <A-right> :ll<cr>
