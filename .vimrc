@@ -22,7 +22,7 @@ Bundle 'hallison/vim-markdown'
 Bundle 'groenewege/vim-less'
 Bundle 'bbommarito/vim-slim'
 Bundle 'kien/ctrlp.vim'
-Bundle 'chloerei/syntastic'
+Bundle 'scrooloose/syntastic'
 
 " 字体
 set guifont=monaco\ 10
