@@ -65,7 +65,8 @@ autocmd FileType ruby,rdoc set tabstop=2 shiftwidth=2
 autocmd FileType html set tabstop=2 shiftwidth=2
 autocmd FileType javascript set tabstop=2 shiftwidth=2
 autocmd FileType coffee set tabstop=2 shiftwidth=2
-au! BufRead,BufNewFile *.json setfiletype json
+autocmd BufRead,BufNewFile *.json set filetype=json
+autocmd BufRead,BufNewFile *.slim set filetype=slim
 
 fun! StripTrailingWhitespace()
     " Don't strip on these filetypes
