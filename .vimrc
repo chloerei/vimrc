@@ -59,6 +59,7 @@ set list listchars=tab:»·,trail:·
 
 autocmd FileType make     set noexpandtab
 autocmd FileType python   set noexpandtab
+autocmd FileType css,scss set tabstop=2 shiftwidth=2
 autocmd FileType eruby  set tabstop=2 shiftwidth=2
 autocmd FileType ruby,rdoc set tabstop=2 shiftwidth=2
 autocmd FileType html set tabstop=2 shiftwidth=2
