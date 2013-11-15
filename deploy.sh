@@ -2,8 +2,6 @@
 
 git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 cp .vimrc .gvimrc ~/
-vim +BundleInstall +qa
-
-# snipmate-snippets
-git submodule init; git submodule update
-cd snipmate-snippets/; rake deploy_local; cd -
+vim +BundleInstall +BundleClean! +qa
+rm ~/.vim/bundle/snipmate.vim/snippets/ -r
+cp snippets/ ~/.vim/bundle/snipmate.vim/ -r
