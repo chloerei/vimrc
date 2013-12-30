@@ -1,14 +1,13 @@
-# My vim config
+# My vimrc
 
-It's my vim config for rails develop on linux. Your can fork or just use it.
+My vimrc for rails develop on linux. Your can fork or just use it.
 
-What vim scripts I use are list in .vimrc with `Bundle` command.
+Manager vim scripts by Bundle.
 
-## Dependent
+## Dependency
 
 * vim
 * git
-* rake
 
 ## Install
 
