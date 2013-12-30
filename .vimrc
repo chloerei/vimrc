@@ -43,26 +43,24 @@ set wildmenu
 filetype plugin indent on
 set autoindent
 
-set tabstop=4
-set shiftwidth=4
-set expandtab
-set smarttab
-
 " Display extra whitespace
 set list listchars=tab:»·,trail:·
 
-autocmd FileType make     set noexpandtab
-autocmd FileType python   set noexpandtab
-autocmd FileType css,scss set tabstop=2 shiftwidth=2
-autocmd FileType eruby  set tabstop=2 shiftwidth=2
-autocmd FileType ruby,rdoc set tabstop=2 shiftwidth=2
-autocmd FileType html set tabstop=2 shiftwidth=2
-autocmd FileType javascript set tabstop=2 shiftwidth=2
-autocmd FileType coffee set tabstop=2 shiftwidth=2
+" Tab
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set smarttab
+
+autocmd FileType make set noexpandtab tabstop=4 shiftwidth=4
+autocmd FileType python set tabstop=4 shiftwidth=4
+
+" Filetype
 autocmd BufRead,BufNewFile *.json set filetype=json
 autocmd BufRead,BufNewFile *.slim set filetype=slim
 autocmd BufRead,BufNewFile *.html.erb set filetype=eruby.html
 
+" Strip trailing whitespace
 fun! StripTrailingWhitespace()
     " Don't strip on these filetypes
     if &ft =~ 'markdown'
@@ -73,21 +71,28 @@ endfun
 
 autocmd BufWritePre * call StripTrailingWhitespace()
 
-" 快捷键
+" Navigator split window
 nmap <Up> <c-w>k
 nmap <Down> <c-w>j
 nmap <Right> <c-w>l
 nmap <Left> <c-w>h
 
+" Ruby complete
 let g:rubycomplete_buffer_loading = 1
 let g:rubycomplete_classes_in_global = 1
 let g:rubycomplete_rails = 1
 
+" Save
 nmap <F2> :w<cr>
+" Save all
 nmap <F3> :wa<cr>
+" Close
 nmap <F4> :q<cr>
+" quicklist prev
 nmap <F6> :cp<cr>
+" quicklist next
 nmap <F7> :cn<cr>
+" Format all
 nmap <F11> gg=G<C-o>
 
 " syntastic
