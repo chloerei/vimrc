@@ -1,0 +1,11 @@
+snippet iframe
+	<iframe src="{{ site.baseurl }}/samples/${1:file}" height="${2:100}" class="${3:sample}"></iframe>
+
+snippet figure
+	<figure>
+	  <img src="{{ site.baseurl }}/${1:file}" alt="${2:alt}">
+	  <figcaption>${3:text}</figcaption>
+	</figure>
+
+snippet raw
+	{% raw %}${1}{% endraw %}${2}

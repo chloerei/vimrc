@@ -47,61 +47,20 @@ snippet backspace
 # ⎋
 snippet escape
 	&#x238B;
-# Generic Doctype
-snippet doctype HTML 4.01 Strict
-	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-	"http://www.w3.org/TR/html4/strict.dtd">
-snippet doctype HTML 4.01 Transitional
-	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-	"http://www.w3.org/TR/html4/loose.dtd">
-snippet doctype HTML 5
-	<!DOCTYPE HTML>
-snippet doctype XHTML 1.0 Frameset
-	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-snippet doctype XHTML 1.0 Strict
-	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-snippet doctype XHTML 1.0 Transitional
-	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-snippet doctype XHTML 1.1
-	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-# HTML Doctype 4.01 Strict
-snippet docts
-	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-	"http://www.w3.org/TR/html4/strict.dtd">
-# HTML Doctype 4.01 Transitional
-snippet doct
-	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-	"http://www.w3.org/TR/html4/loose.dtd">
-# HTML Doctype 5
 snippet doct5
 	<!DOCTYPE HTML>
-# XHTML Doctype 1.0 Frameset
-snippet docxf
-	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
-# XHTML Doctype 1.0 Strict
-snippet docxs
-	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-# XHTML Doctype 1.0 Transitional
-snippet docxt
-	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-# XHTML Doctype 1.1
-snippet docx
-	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 snippet html
 	<html>
 	${1}
 	</html>
-snippet xhtml
-	<html xmlns="http://www.w3.org/1999/xhtml">
-	${1}
+snippet html5
+	<!DOCTYPE html>
+	<html>
+		<head>
+		</head>
+		<body>
+			${1}
+		</body>
 	</html>
 snippet body
 	<body>
@@ -124,8 +83,8 @@ snippet scriptsrc
 	<script src="${1}.js"></script>${2}
 snippet style
 	<style>
-		${2}
-	</style>${3}
+		${1}
+	</style>
 snippet base
 	<base href="${1}" target="${2}"`Close()`>
 snippet r
@@ -184,12 +143,17 @@ snippet table
 	</table>${4}
 snippet textarea
 	<textarea name="${1:Name}" rows="${2:8}" cols="${3:40}">${4}</textarea>${5}
-snippet html5
-	<!DOCTYPE html>
-	<html>
-		<head>
-		</head>
-		<body>
-			${1}
-		</body>
-	</html>
+snippet ul
+	<ul>
+		${1}
+	</ul>
+snippet ol
+	<ol>
+		${1}
+	</ol>
+snippet li
+	<li>${1}</li>
+snippet img
+	<img src="${1:src}" alt="${2:alt}" />${3}
+snippet p
+	<p>${1}</p>
