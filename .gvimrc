@@ -5,4 +5,4 @@ set guioptions-=L "gui的左边的滑动条
 set guioptions-=m "gui的菜单
 
 set cul
-colorscheme desert
+set guifont=monaco\ 10

@@ -23,33 +23,26 @@ Bundle 'slim-template/vim-slim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'othree/html5.vim'
+Bundle 'junegunn/goyo.vim'
 
-" 字体
-set guifont=monaco\ 10
-
+" Close backup
 set nobackup
 set nowritebackup
 
-"语法高亮
-syntax on
-
-"打开命令行补全菜单
-set wildmenu
-"关闭响铃，闪屏
+" Close bell
 set vb t_vb=
-"显示行号
-set nu
-"马上跳到搜索匹配
-set incsearch
 
-"根据文件格式载入插件和缩进
+set mouse=a
+
+" Style
+colorscheme desert
+set number
+syntax on
+set incsearch
+set wildmenu
 filetype plugin indent on
 set autoindent
 
-"打开鼠标功能
-set mouse=a
-
-"指标符宽度
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -68,6 +61,7 @@ autocmd FileType javascript set tabstop=2 shiftwidth=2
 autocmd FileType coffee set tabstop=2 shiftwidth=2
 autocmd BufRead,BufNewFile *.json set filetype=json
 autocmd BufRead,BufNewFile *.slim set filetype=slim
+autocmd BufRead,BufNewFile *.html.erb set filetype=eruby.html
 
 fun! StripTrailingWhitespace()
     " Don't strip on these filetypes
@@ -108,3 +102,15 @@ let g:syntastic_mode_map = { 'passive_filetypes': ['scss', 'slim'] }
 nmap <A-up> :lprev<cr>
 nmap <A-down> :lnext<cr>
 nmap <A-right> :ll<cr>
+
+" Goyo
+function! s:goyo_before()
+    set nonumber
+endfunction
+
+function! s:goyo_after()
+    set number
+endfunction
+
+let g:goyo_callbacks = [function('s:goyo_before'), function('s:goyo_after')]
+nmap <leader>g :Goyo<cr>
