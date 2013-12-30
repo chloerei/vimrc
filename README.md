@@ -2,7 +2,7 @@
 
 My vimrc for rails develop on linux. Your can fork or just use it.
 
-Manager vim scripts by Bundle.
+Manage vim scripts by Bundle.
 
 ## Dependency
 
