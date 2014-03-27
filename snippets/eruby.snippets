@@ -1,12 +1,10 @@
 snippet 5=
 	<%= ${1} %>
 snippet 5
-	<%= ${1} %>
-snippet each
-	<% ${1:items}.each do |item| %>
+	<% ${1} %>
+snippet if
+	<% if ${1:condition} %>
 		${2}
-	<% end %>
-snippet ff
-	<%= form_for ${1:@target} do |f| %>
-		${2}
+	<% else %>
+		${3}
 	<% end %>

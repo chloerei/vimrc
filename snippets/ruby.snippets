@@ -150,3 +150,7 @@ snippet task
 	task :${2:task_name => [:dependent, :tasks]} do
 		${3}
 	end
+	u
+
+snippet exe
+	execute(*%W(${1:command}))
